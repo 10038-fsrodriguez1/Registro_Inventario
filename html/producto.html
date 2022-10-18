@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+<title>Producto</title>
+
+
+	<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="../css/form-validation.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+	<div class="container">
+
+      <div class="row">
+
+        <div class="col-md-8 order-md-1">
+
+          <form method="post" action="../php/productPost.php" class="needs-validation" novalidate>
+
+            <div class="row">
+			   <hr class="mb-4">
+              <div class="col-md-6 mb-3">
+                <label for="st_modelo">Modelo</label>
+                <input  type="text" class="form-control" name="st_modelo" id="idst_modelo"  placeholder="Modelo"  required />
+
+            </div>
+				<br>
+				</div>
+
+			  <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="st_precio">Precio</label>
+                <input  type="text" class="form-control" name="st_precio" id="idst_precio" placeholder="Precio"  maxlength="5" pattern="[0,9]+{10}$" required />
+              </div>
+              </div>
+            <div class="mb-3">
+              <label for="st_categoria">Categoria</label>
+
+                <input  type="text" class="form-control" name="st_categoria" id="idst_categoria" placeholder="Categoria" required pattern="[a-z]{1,15}"  required />
+
+            </div>
+
+            <div class="mb-3">
+              <label for="st_memoria">Memoria</label>
+              <input  type="text" id="idst_memoria" name="st_memoria" class="form-control" placeholder="Memoria"  required />
+
+            </div>
+            <div class="mb-3">
+              <label for="st_almac">Almacenamiento</label>
+              <input  type="text" id="idst_almac" name="st_almac" class="form-control" placeholder="Almacenamiento"  required />
+
+            </div>
+
+
+            <hr class="mb-4">
+			  <table width="200" border="0">
+			  <tbody>
+				<tr>
+				  <td><button type="submit" class="btn btn-primary btn-lg btn-block">Aceptar</button></td>
+				  <td><button type="reset" class="btn btn-primary btn-lg btn-block">Limpiar</button></td>
+				</tr>
+			  </tbody>
+			</table>
+          </form>
+        </div>
+      </div>
+
+    </div>
+	<script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
